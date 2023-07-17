@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap.css">
+</head>
+
+<body>
+    <header>
+        <img src="team-4.jpg" class="profile">
+    </header>
+    <div class="sidebar">
+        <ul>
+            <li>
+                <a href="index.html">
+                    <span><i class="fa fa-home"></i> </span>
+                    <span>Dashboard</span>
+                </a>
+            </li>
+            <li>
+                <a href="student.html">
+                    <span><i class="fa fa-users"></i></span>
+                    <span>Students</span>
+                </a>
+            </li>
+            <li>
+                <a href="Courses.html" >
+                    <span><i class="fa fa-folder-open"></i></span>
+                    <span>Courses</span>
+                </a>
+            </li>
+            <li>
+                <a href="student-list.html">
+                    <span><i class="fa fa-list"></i></span>
+                    <span>Student Enrolled</span>
+                </a>
+            </li>
+            <li>
+                <a href="report.html">
+                    <span><i class="fa fa-envelope"></i></span>
+                    <span>Report</span>
+                </a>
+            </li>
+            <li>
+                <a href="Quiz.html" class="active-2">
+                    <span class="text-warning"><i class="fa fa-question"></i></span>
+                    <span class="text-muted">Quiz</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="main"> <br> <br>
+      <div class="card-sum card   pt-5 " >
+        <form action="" class="card-body text-white bg-dark">
+            <label for="" id="alabel">A</label> <br>
+            <input type="text" class="label-a" id="aTextBox"> <br>
+            <label for="" id="blabel" >B</label><br>
+            <input type="text" name="" class="label-b" id="bTextBox">  
+            <button type="button" id="subtn">Calculate</button>
+            <label for="" id="clabel" class="btn-3 text-warning btn btn-success"></label>
+            
+
+        </form>
+      </div>
+      
+    </div>
+    <script src="play.js"></script>
+    <script>
+     name=window.prompt("What is you name");
+
+        let a;
+        let b;
+        let c;
+
+        document.getElementById("subtn") .onclick=function(){
+            
+            a = document.getElementById("aTextBox").value;
+            a = Number(a);
+
+            b = document.getElementById("bTextBox").value;
+            b = Number(b)
+
+            c = Math.sqrt(Math.pow(a,0 ) + Math.pow(b, 0));
+
+            document.getElementById("clabel").innerHTML = "Side C: " +c;
+            
+
+        }
+    </script>
+    <script src="bootstrap.bundle.js.map"></script>
+    <script src="bootstrap.bundle.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,7 @@
+web performance-work=>
+best-perfomance -75
+ Accessibillity=69 to low
+this is because the page has many javascript code and Html element  vs bootstrap.
+the slowest web page 10.4sec to navigate or usse the page
+Accessibillity=85 first to access and use few html element to load.
+load in no java script just html

@@ -1,0 +1,369 @@
+body {
+    background: white;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+header{
+    width: 100%;
+    height: 40px;
+    position: absolute;
+    background: orange;
+    z-index: 6;
+}
+header img{
+    border-radius: 80px;
+    width: 70px;
+    height: 40px;
+    border: 2px solid green;
+    animation: 200s mymove infinite;
+}
+@keyframes mymove {
+    from {
+        margin-left: 80%;
+    }
+
+}
+.sidebar{
+    position: absolute;
+    width: 20%;
+    background-color: #07b00d;
+    height: 100vh;
+    z-index: 4;
+    padding-top: 50px;
+}
+.sidebar ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.sidebar ul li{
+    padding: 20px 15px;
+    border-bottom: 1px solid white;
+}
+.sidebar ul li a{
+    color: aliceblue;
+    text-decoration: none;
+}    
+.sidebar ul li a:hover {
+        color: red;
+}
+
+
+main{
+    padding-left: 340px;
+    padding-top:  60px;
+    background-attachment: fixed;
+}
+
+.edit-form{
+    visibility: hidden;
+    transform: translate(-50% , -50% ) scale(0.1);
+}
+.edit-form .date-time[type]{
+    color: black ;
+}
+.view-point{
+    visibility: hidden;
+        transform: translate(-50%, -50%) scale(0.1);
+}
+.platy-view{
+    visibility: visible;
+        margin-left: 360px;
+        padding: 20px 17px;
+        background: whitesmoke;
+        margin-top: -270px;
+        width: 600px;
+        border-radius: 40px;
+        border: 1px double black;
+        height: 60vh;
+        transform: translate(-50%, -20%) scale(1);
+}
+
+.platy-view h6{
+    color: #000;
+    margin-left: 18px;
+    animation: 2s ikon infinite;
+}
+@keyframes ikon {
+    from{color: #000;}
+    to{color: antiquewhite;} 
+}
+.platy-view button{
+    width: 200px;
+    margin-left: 150px;
+    border-radius: 40px;
+    border: none;
+    margin-top: 60px;
+    color: aliceblue;
+    background: darkred;
+}
+.platy-view input[type]{
+    color: #000;
+}
+.open-edit{
+    visibility: visible;
+    margin-left: 360px;
+    padding: 20px 17px;
+    background: whitesmoke;
+    width: 600px;
+    border-radius: 60px;
+    border: 1px groove black;
+    height: 60vh;
+    transform: translate(-50%, -20%) scale(1);
+}
+.open-edit input{
+    border: 1px solid black;
+    color: #000;
+}
+.open-edit button{
+    outline: none;
+    margin-left: 10px;
+    margin-top: 25px;
+    position: absolute;
+    border-radius: 10px;
+    background-color: #07b00d;
+    padding: 10px 10px;
+    
+}
+.container-fluid button{
+    margin-top: 100px;
+    margin-left: 250px ;
+}
+@media screen and (max-width: 756px) {
+    
+    .open-edit{
+        margin-left: 280px;
+        font-size: 0.3rem;
+        width: 200px;
+        padding-top: 10px;
+        transform: translate(50%, -30%) scale(1);
+    }
+    .sidebar ul li{
+        padding: 15px 25px;
+    }
+    .sidebar ul li a{
+        font-size: 20px;
+    }
+    .sidebar ul li a span:last-child{
+        display: none;
+    }
+    main{
+        margin-left: -230px;
+    
+    }
+}
+@media  screen and (max-width: 1023px) {
+    .edit-form {
+            margin-top: -128px;
+            width: 90%;
+            height: 70vh;
+            font-size: 1rem;
+            margin-left: -145px;
+            padding: 10px 10px;
+            background: seashell;
+        }
+        .platy-view{
+            margin-top: -366px;
+                width: 90%;
+                height: 70vh;
+                font-size: 1rem;
+                margin-left: 188px;               
+                border: 1px solid gray;
+                padding: 20px 50px;
+                background: seashell;
+        }
+        .platy-view button{
+            border: none;
+            border-radius: 25px;
+            margin-left: 20px;
+            margin-top: 60px;
+            width: 200px;
+            color: aliceblue;
+            background: darkred;
+        }
+        .platy-view input{
+            outline: none;
+            border: green 2px groove;
+        }
+    .edit-form p{
+        display: block;
+        width: 240px;
+        animation: 23s mytext infinite;
+        animation: both 23s mytext infinite;
+        margin-left:  80px;
+    }
+    .edit-form .terms{
+        cursor: pointer;
+        animation: 27s terms infinite;
+    }
+    @keyframes terms {
+        from{color: black;}
+        to{color: green;}
+    }
+    @keyframes mytext {
+        from{margin-left:  10px;}
+        to{margin-right: 90px;} 
+    }
+        
+    header img{
+        border-radius: 80px;
+        width: 70px;
+        height: 40px;
+        border: 2px solid green;
+        animation: 55s mymove infinite;
+    }
+    @keyframes mymove {
+        from {
+            margin-left: 80%;
+        }
+
+    }
+        .edit-form button{
+            border: none;
+            cursor: pointer;
+            color: white;
+            margin-left: -160px;      
+            margin-top: 40px; 
+        }
+        .sidebar ul li {
+
+
+            cursor: pointer;
+            padding: 24px 30px;
+        }
+        .sidebar ul li a:hover{
+            font-size: 20px;
+        
+            
+        }
+        .sidebar ul li a.active-2{
+            margin-left: -30px;
+            padding: 20px  38px;
+            color: gainsboro;
+            background: darkgreen;
+            animation: 20s inme infinite;
+        }
+        @keyframes inme{
+            from{background: darkgreen;}
+            to{background: rgb(83, 130, 13);}
+        }
+    
+        .sidebar ul li a {
+            font-size: 20px;
+        }
+    
+        .sidebar ul li a span:last-child {
+            display: none;
+        }
+    
+        main {
+            
+            font-size: 0.5rem;
+            margin-left: -230px;
+        }
+        main table{
+            font-weight: bolder;
+            font-size: 0.5rem;
+            width: 80%;
+        }
+        .main{
+            font-size: 0.7rem;
+            margin-left: -220px;
+        
+        }
+        .main button{
+            margin-top: 20px;
+        }
+       .main table{
+        width: 100%;
+        font-size: 0.6rem;
+       }
+      .main form{
+        padding-left: 50px;
+        padding-top: 50px;
+        padding-right: 200px;
+      }
+      .main .course-form input{
+        width: 300px;
+      } 
+      .main .course-form button{
+        font-size: 0.6rem;
+      }
+      .grid-display{
+        width: 200px;
+        border-radius: 80px;
+        font-size: 0.4rem;
+      }
+      .grid-display select{
+        font-size: 0.5rem;
+      }
+      .report{
+        width: 70%;
+        padding-left: -20px;
+        margin-left: 3px;
+      }
+      .col table{
+        width: 600px;
+        padding-left: 40px;
+
+      }
+      .btn-home{
+        margin-top: 30px;
+        margin-left: 40px;
+      }
+      .card-sum{
+        margin-top: 60px;
+      }
+
+}
+.card-sum{
+    margin-top: 40px;
+    margin-left: 330px;
+}
+.card-sum  .label-a{
+    margin-left: 45px;
+}
+.card-sum .label-b{
+    margin-left: 45px;
+}
+.card-sum .btn-3{
+    display: block;
+    margin-top: 50px;
+}
+.course-form{
+    width: 400px;
+    margin-left: 320px;
+    padding-top: 80px;
+    
+} 
+.course-form input{
+    color: #000;
+}
+.course-form button{
+    margin-top: 30px;
+}
+.col table{
+    cursor: pointer;
+    width: 500px;
+}
+.grid-display{
+    display: grid;
+    padding-top: 30px;
+    grid-template-columns: repeat(2,1fr);
+}
+.grid-display .option {
+    border: 1px solid gray;
+}
+.report{
+    width: 80%;
+    margin-left: 50px;
+}
+.col table{
+    width: 50%;
+    margin-left: 40px;
+}
+.btn-home{
+    margin-top: 25px;
+    margin-left: 50px;
+}
